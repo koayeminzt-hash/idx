@@ -4,21 +4,23 @@
   },
   "inbounds": [
     {
-      "listen": "0.0.0.0",
-      "port": "$PORT", 
+      "listen": null,
+      "port": "$PORT",
       "protocol": "vless",
       "settings": {
+        "decryption": "none",
         "clients": [
           {
+            "email": "idx-ws",
+            "flow": "",
             "id": "$UUID"
           }
-        ],
-        "decryption": "none"
+        ]
       },
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/TG-@waznimey"
+          "path": "/waznimey"
         }
       }
     }
