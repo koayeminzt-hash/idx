@@ -5,12 +5,12 @@
   "inbounds": [
     {
       "listen": "0.0.0.0",
-      "port": $PORT , 
+      "port": "$PORT", 
       "protocol": "vless",
       "settings": {
         "clients": [
           {
-            "id": "$UUID" // သင့် UUID
+            "id": "$UUID"
           }
         ],
         "decryption": "none"
@@ -18,7 +18,7 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/TG-@waznimey" // သင့် Path
+          "path": "/TG-@waznimey"
         }
       }
     }
