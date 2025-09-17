@@ -4,26 +4,21 @@
   },
   "inbounds": [
     {
-      "listen": null,
-      "port": $PORT,
+      "listen": "0.0.0.0",
+      "port": $PORT , 
       "protocol": "vless",
       "settings": {
-        "decryption": "none",
         "clients": [
           {
-            "email": "idx-ws",
-            "flow": "",
-            "id": "$UUID"
+            "id": "$UUID" // သင့် UUID
           }
-        ]
+        ],
+        "decryption": "none"
       },
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": ""
-          }
+          "path": "/TG-@waznimey" // သင့် Path
         }
       }
     }
